@@ -31,9 +31,9 @@ async function main(filepath) {
     const users = new Table(processedData);
     const html = await HtmlParser.Parse(users);
 
-    // create html file on htmlResults folder
+    // create html file on outputs/html folder
     htmlWriter.WriteHtml(Date.now() + '.html', html);
 
-    // create pdf file on pdfResults folder
+    // create pdf file on outputs/pdf folder
     PdfWriter.WritePDF(Date.now() + '.pdf', html);
 }
