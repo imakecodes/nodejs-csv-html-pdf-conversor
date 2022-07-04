@@ -1,4 +1,4 @@
-# Exel Html/PDF conversor:
+# Excel Html/PDF conversor:
 
 An simple .csv conversor to HTML and PDF. Built with NodeJS.
 
