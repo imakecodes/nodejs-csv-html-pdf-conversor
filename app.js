@@ -13,18 +13,6 @@ const PdfWriter = require('./Classes/PdfWriter');
 let reader = new Reader();
 let htmlWriter = new HtmlWriter();
 
-const questions = [
-    {
-        type: 'test',
-        name: 'test',
-        question: 'test',
-    }
-];
-
-inquirer.prompt(questions).then(answers => {
-    console.log(`Hi ${answers}`);
-});
-
 // Insert a command line question to inform the .csv file path (to perform the html and pdf convertion)
 readline.question('Insert the .csv file path: ', path => {
     readline.close();
@@ -36,7 +24,7 @@ readline.question('Insert the .csv file path: ', path => {
 
 
 async function main(filepath) {
-    if (!filepath || filepath.includes('.csv')) {
+    if (!filepath || !filepath.includes('.csv')) {
         return console.log('No valid csv file path passed!');
     }
 
