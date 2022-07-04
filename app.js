@@ -25,7 +25,6 @@ async function main(filepath) {
         return console.log('No valid csv file path passed!');
     }
 
-    // const data = await reader.Read('./inputs/users.csv');
     const data = await reader.Read(filepath);
     const processedData = Processor.Process(data);
 
