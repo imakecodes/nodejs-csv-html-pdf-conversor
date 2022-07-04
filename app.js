@@ -20,9 +20,6 @@ readline.question('Insert the .csv file path: ', path => {
     main(path);
 });
 
-
-
-
 async function main(filepath) {
     if (!filepath || !filepath.includes('.csv')) {
         return console.log('No valid csv file path passed!');
