@@ -22,7 +22,7 @@ The app will ask an .csv file path to execute the conversion. If you don't have 
 
 Once you informed the .csv file path, the converted files will be on output directory, specifically on respective html/pdf directories.
 
-_PS:_ There is one output example for either html and pdf based on input file;
+**PS:** There is one output example for either html and pdf based on input file;
 
 ### Built With:
 
