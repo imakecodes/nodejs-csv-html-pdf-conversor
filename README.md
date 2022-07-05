@@ -2,11 +2,19 @@
 
 An simple .csv conversor to HTML and PDF. Built with NodeJS.
 
+## Install:
+
+To install the dependencies, just execute the following command(you can also use `yarn` instead `npm`):
+
+```bash
+npm install
+```
+
 ## Run:
 
 To run the conversor, run the following command on terminal (assuming that you're in root project directory):
 
-```
+```bash
 node app.js
 ```
 
@@ -14,7 +22,7 @@ node app.js
 
 The app will ask an .csv file path to execute the conversion. If you don't have an .csv, you can run the example passing the following path:
 
-```
+```bash
 ./inputExample/users.csv
 ```
 
